@@ -1,5 +1,6 @@
 use industria_beleza;
 
+-- Insere dados na tabela RegiÃ£o
 insert into Regiao(idRegiao)
 values('Itaim Paulista');
 insert into Regiao(idRegiao)
@@ -11,10 +12,11 @@ values('AE Carvalho');
 insert into Regiao(idRegiao)
 values('Burgo Paulista');
 
+-- Insere dados na tabela PontosEstrategicos
 insert into PontosEstrategicos(idPonto, idRegiao)
 values('Banquinha de Jornais - Tio Jorge', 'Jardim Helena');
 insert into PontosEstrategicos(idPonto, idRegiao)
-values('Padaria São Pedro', 'Jardim Helena');
+values('Padaria Sï¿½o Pedro', 'Jardim Helena');
 insert into PontosEstrategicos(idPonto, idRegiao)
 values('Panificadora Alfa', 'Jardim Helena');
 insert into PontosEstrategicos(idPonto, idRegiao)
@@ -28,10 +30,11 @@ values('Robru', 'Jardim Robru');
 insert into PontosEstrategicos(idPonto, idRegiao)
 values('Padaria de Pobre', 'Itaim Paulista');
 insert into PontosEstrategicos(idPonto, idRegiao)
-values('Cemitério de Pobre', 'Itaim Paulista');
+values('Cemitï¿½rio de Pobre', 'Itaim Paulista');
 insert into PontosEstrategicos(idPonto, idRegiao)
-values('Praça dos Professores', 'AE Carvalho');
+values('Praï¿½a dos Professores', 'AE Carvalho');
 
+-- Insere dados na tabela Veiculo
 insert into Veiculo(idVeiculo, modeloVeiculo, marcaVeiculo, corVeiculo)
 values('BRA34P4', 'Fiesta', 'Fiat', 'Ciano Marinho');
 insert into Veiculo(idVeiculo, modeloVeiculo, marcaVeiculo, corVeiculo)
@@ -45,6 +48,7 @@ values('BRA29JK', 'Fiesta', 'BMW', 'Cianinho');
 insert into Veiculo(idVeiculo, modeloVeiculo, marcaVeiculo, corVeiculo)
 values('BRAZIL', 'Fiesta', 'Nissan', 'Azul Ciano');
 
+-- Insere dados na tabela Vendedor
 insert into Vendedor(nomeVendedor, cpfVendedor,	idRegiao, idVeiculo)
 values('Pedro Henrique Galdino', '54216753894', 'Jardim Helena', 'BRO3479');
 insert into Vendedor(nomeVendedor, cpfVendedor,	idRegiao, idVeiculo)
@@ -54,6 +58,7 @@ values('Pedro Henrique Hiroshi Nakamura', '975461238561', 'Jardim Robru', 'BRAZI
 insert into Vendedor(nomeVendedor, cpfVendedor,	idRegiao, idVeiculo)
 values('Pedro Henrique Botelho', '123457648851', 'Itaim Paulista', 'BRA098F');
 
+-- Insere dados na tabela Cliente
 insert into Cliente(nomeCliente, cpfCliente)
 values('Rogrio Silva Santana', '45142376425');
 insert into Cliente(nomeCliente, cpfCliente)
@@ -61,6 +66,7 @@ values('Jefersinho da Cunha Costa', '59486575215');
 insert into Cliente(nomeCliente, cpfCliente)
 values('Wagner Moreira', '23458976164');
 
+-- Insere dados na tabela NotaFiscal
 insert into NotaFiscal(idVendedor, idCliente)
 values(1, 2);
 insert into NotaFiscal(idVendedor, idCliente)
@@ -70,6 +76,7 @@ values(1, 3);
 insert into NotaFiscal(idVendedor, idCliente)
 values(0, 1);
 
+-- Insere dados na tabela Produto
 insert into Produto(nomeProduto, estoqueProduto, precoProduto, vendivel)
 values('Delineador', 1, 100.0, 1);
 insert into Produto(nomeProduto, estoqueProduto, precoProduto, vendivel)
@@ -81,6 +88,7 @@ values('Esmalte Base', 50, 50.0, 1);
 insert into Produto(nomeProduto, estoqueProduto, precoProduto, vendivel)
 values('Esmalte Azul', 39, 40.0, 1);
 
+-- Insere dados na tabela Pedido
 insert into Pedido(idNota, idProduto, quantidadeProduto)
 values(0, 0, 2);
 insert into Pedido(idNota, idProduto, quantidadeProduto)
